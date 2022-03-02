@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Ubuntu&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    width: 90%;
+    margin-left: 5%;
+}
+.im{
+    height: 160vh;
+    width: 100%;
+    z-index: -1;
+    position:absolute;
+    top: 0;
+    background: url(../assets/img/banner.jpg);
+    background-attachment: fixed;
+    background-size:  100% 100%;
+    background-repeat: no-repeats;
+    min-height: 500px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+header{
+    position:sticky;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+header nav ul{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo a{
+    font-size: 20px;
+    font-weight: bold;
+}
+.home{
+    padding-top: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.home .info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.home .info h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.home .info p{
+    font-size: 25px;
+}
+.home .info .btn{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+.home .info .btn a{
+    border: 2px solid crimson;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    border-radius: 6px;
+}
+.home .info .btn .cv{
+    background-color: crimson;
+}
+.home .info .btn .cv:hover{
+    background: transparent;
+    transition: .5s ease-in-out;
+}
+.home .info .btn .hire:hover{
+    background-color: crimson;
+    transition: .5s ease-in-out;
+}
+.home .social-media{
+    margin-top: 15px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    width: 250px;
+
+}
+.home .social-media i{
+    font-size: 20px;
+}
+
+@media screen and (min-width:800px){
+    .im{
+        height: 100vh;
+    }
+    .home{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .home .info h1{
+        font-size: 50px;
+    }
+
+}
