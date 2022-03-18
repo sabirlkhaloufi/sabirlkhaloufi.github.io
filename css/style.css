@@ -27,7 +27,7 @@
 }
 .navbar-mobile{
     transition: ease-in-out .8s;
-    position: absolute;
+    position:fixed;
     top: 0;
     display: none;
     background-color: black;
@@ -49,8 +49,8 @@
 }
 .menutoggle div{
     background-color: white;
-    width: 28px;
-    height: 3px;
+    width: 30px;
+    height: 4px;
     border-radius: 6px;
 }
 .t-line,.b-line{
@@ -61,7 +61,7 @@
     transition: ease-in-out .5s;
 }
 .b-line-r{
-    margin-top: -7px;
+    margin-top: -8px;
     transform: rotate(45deg);
     transition: ease-in-out .5s;
 }
@@ -84,6 +84,7 @@ ul{
     list-style: none;
 }
 header{
+    padding: 5px;
     position:sticky;
     top: 20px;
     display: flex;
@@ -156,6 +157,51 @@ header nav ul{
     font-size: 20px;
 }
 
+
+/* ---------------------about me----------------------------- */
+.about{
+    margin-top: 180px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about .who{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.about .who hr{
+    width: 30px;
+}
+.about .who span{
+    color: crimson;
+    font-size: 20px;
+    font-weight: bold;
+}
+.about h2{
+    font-size: 40px;
+}
+.about .profil{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.about .profil .resume{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about .profil .resume p{
+    line-height: 1.8;
+}
+.about .profil h4{
+    font-size: 19px;
+    font-weight: 600px;
+}
+
 @media screen and (min-width:800px){
     header nav{
         display: block;
@@ -168,12 +214,19 @@ header nav ul{
         justify-content: space-between;
     }
     .home .info h1{
-        font-size: 50px;
+        font-size: 55px;
     }
     .navbar-mobile{
         display: none;
     }
     .menutoggle{
         display: none;
+    }
+
+    /* --------------about---------------------- */
+
+    .about .profil{
+        flex-direction: row;
+        align-items: center;
     }
 }
