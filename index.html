@@ -11,12 +11,13 @@
 <body>
     <div class="im">
     </div>
+    <div class="bg-nav"></div>
 
     <div class="navbar-mobile">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Services">Service</a></li>
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -24,13 +25,13 @@
     <div class="container">
         <header>
             <div class="logo">
-                <a href="index.html">Porfolio</a>
+                <a href="index.html">SABIR.DEV</a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Service</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -42,8 +43,8 @@
             </div>
         </header>
         <main>
-            
-            <div class="home">
+
+            <div class="home" id="Home">
                 <div class="info">
                     <p>Hello, my name is</p>
                     <h1>Sabir Lkhaloufi</h1>
@@ -59,12 +60,22 @@
                         <a href="https://twitter.com/LkhaloufiSabir"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
-                <div class="img">
-                    <img src="./assets/img/sabirimage-removebg-preview.png" alt="sabir lkhaloufi" height="250">
-                </div>
+              
+                    
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="-50" y="70" href="./assets/img/sabirimage-removebg-preview.png"/>
+                        </g>
+                    </svg>
+
+      
             </div>
 
-            <div class="about">
+            <div class="about" id="About">
                 <div class="title">
                     <h2>About me</h2>
                     <div class="who"><hr><span>who i am</span><hr></div>
@@ -78,10 +89,41 @@
                     </div>
                 </div>
             </div>
+
+            <div class="services" id="Services">
+                <div class="title">
+                    <h2>Services</h2>
+                    <div class="who"><hr><span>who i provide</span><hr></div>
+                </div>
+                <div class="bg-service"></div>
+                <div class="cards">
+                    <div class="card">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fas fa-code"></i>
+                        <h3>Web Developer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fas fa-tools"></i>
+                        <h3>IT Support</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                    </div>
+                </div>
+            </div>
+
         </main>
         <footer>
-            
         </footer>
+
+        <div class="up-top " style="color:aliceblue">
+            <i class="fas fa-angle-up" style="color:aliceblue"></i>
+        </div>
     </div>
     <script src="./js/main.js"></script>
 </body>

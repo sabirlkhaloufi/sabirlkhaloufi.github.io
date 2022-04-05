@@ -5,6 +5,61 @@
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
+
+:root{
+    --colorB:crimson;
+    --colorP:black;
+}
+
+.home__blob{
+    margin-top:-80px;
+    fill: var(--colorB);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* scroll bars */
+::-webkit-scrollbar{
+    background-color: var(--colorP);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--colorB);
+    border-radius: 10px;
+}
+/* scroll bars */
+
+/* ---up top btn */
+.up-top{
+    position:fixed;
+    bottom: 20px;
+    right: 15px;
+    background-color:var(--colorB);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: -100px;
+}
+.show-up-top{
+    margin-bottom:0 !important;
+    transition: .8s ease-in-out;
+}
+.up-top i{
+    font-size: 25px;
+}
+/* ---up top btn */
+.show-bg-nav{
+    transition: .5s ease-in-out;
+    margin-top: 0 !important;
+}
+.bg-nav{
+    background-color: var(--colorB);
+    height: 70px;
+    width: 100vw;
+    position:fixed;
+    top: 0;
+    margin-top: -200px;
+}
 .container{
     width: 90%;
     margin-left: 5%;
@@ -15,7 +70,7 @@
     z-index: -1;
     position:absolute;
     top: 0;
-    background: url(../assets/img/banner.jpg);
+    background: url(../assets/img/macbook_5k.jpg);
     background-attachment: fixed;
     background-size:  100% 100%;
     background-repeat: no-repeats;
@@ -30,7 +85,7 @@
     position:fixed;
     top: 0;
     display: none;
-    background-color: black;
+    background-color: var(--colorP);
     width: 100%;
     height: 100vh;
 }
@@ -129,21 +184,21 @@ header nav ul{
     gap: 15px;
 }
 .home .info .btn a{
-    border: 2px solid crimson;
+    border: 2px solid var(--colorB);
     padding: 10px;
     width: 120px;
     text-align: center;
     border-radius: 6px;
 }
 .home .info .btn .cv{
-    background-color: crimson;
+    background-color: var(--colorB);
 }
 .home .info .btn .cv:hover{
     background: transparent;
     transition: .5s ease-in-out;
 }
 .home .info .btn .hire:hover{
-    background-color: crimson;
+    background-color: var(--colorB);
     transition: .5s ease-in-out;
 }
 .home .social-media{
@@ -166,22 +221,23 @@ header nav ul{
     flex-direction: column;
     align-items: center;
 }
-.about .who{
+.title .who{
     display: flex;
     gap: 10px;
     align-items: center;
     justify-content: center;
 }
-.about .who hr{
+.title .who hr{
     width: 30px;
 }
-.about .who span{
-    color: crimson;
+.title .who span{
+    color: var(--colorB);
     font-size: 20px;
     font-weight: bold;
 }
-.about h2{
+.title h2{
     font-size: 40px;
+    text-align: center;
 }
 .about .profil{
     margin-top: 30px;
@@ -200,6 +256,54 @@ header nav ul{
 .about .profil h4{
     font-size: 19px;
     font-weight: 600px;
+}
+
+/*----------------------------------------services----------------------------------------*/
+.services{
+    background-color: var(--colorP);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    z-index: -2;
+    width:98.2vw;
+    left: 0;
+    padding-bottom: 50px;
+}
+.services .cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.services .cards .card{
+    cursor: pointer;
+    border-radius: 10px ;
+    width: 350px;
+    height: 250px;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.services .cards .card:hover{
+    background-color: var(--colorB);
+    transition: .5s ease-in-out;
+}
+.services .cards .card i{
+    color: var(--colorB);
+    font-size:50px;
+}
+.services .cards .card h3{
+    font-size: 25px;
+    font-weight: 500px;
+}
+.services .cards .card p{
+    text-align: center;
 }
 
 @media screen and (min-width:800px){
@@ -223,10 +327,17 @@ header nav ul{
         display: none;
     }
 
-    /* --------------about---------------------- */
-
+    /*--------------about----------------------*/
     .about .profil{
         flex-direction: row;
         align-items: center;
     }
+
+    /*--------------services----------------------*/
+    .services .cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0px 5px;
+    }
+
 }
