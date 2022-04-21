@@ -6,113 +6,232 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabir lkhaloufi</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="im">
-    </div>
-    <div class="bg-nav"></div>
-
-    <div class="navbar-mobile">
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Services">Service</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-    </div>
-    <div class="container">
-        <header>
-            <div class="logo">
-                <a href="index.html">SABIR.DEV</a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Services">Service</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="menutoggle">
-                <div class="t-line"></div>
-                <div class="m-line"></div>
-                <div class="b-line"></div>
-            </div>
+        <header class="position-sticky top-0">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                  <a class="navbar-brand" href="index.html">SABIR.DEV</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-2 ms-lg-3">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#About">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#Services">Service</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#Skills">Skills</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#Works">Works</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#Contact">Contact</a>
+                      </li> 
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
         <main>
 
-            <div class="home" id="Home">
-                <div class="info">
-                    <p>Hello, my name is</p>
-                    <h1>Sabir Lkhaloufi</h1>
-                    <p class="write"></p>
-                    <div class="btn">
-                        <a class="cv" href="#">Download Cv</a>
-                        <a class="hire" href="#">Hire Me</a>
-                    </div> 
-                    <div class="social-media">
-                        <a href="https://www.linkedin.com/in/sabir-lkhaloufi-9aaab2209/"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/sabirlkhaloufi"><i class="fab fa-github"></i></a>
-                        <a href="https://web.facebook.com/s"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/LkhaloufiSabir"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-              
-                    
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="-50" y="70" href="./assets/img/sabirimage-removebg-preview.png"/>
-                        </g>
-                    </svg>
+            <div class="home vh-100" id="Home">
+                <div class="container vh-100 d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                    <div class="info text-white d-flex flex-column gap-2 mt-5">
+                        <p class="h3">Hello, my name is</p>
+                        <h1 class="h1 name">Sabir Lkhaloufi</h1>
+                        <p class="write h3"></p>
+                        <div class="btn justify-content-start d-flex gap-3">
+                            <a class="cv btn btn-danger" href="./assets/img/sabir cv.pdf" target="_blank">Download Cv</a>
+                            <a class="hire btn btn-danger" href="#">Contact Me</a>
+                        </div> 
+                        <div class="social-media d-flex gap-4 ms-3">
+                            <a class="text-white h5" target="_blank" href="https://www.linkedin.com/in/sabir-lkhaloufi-9aaab2209/"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="text-white h5" target="_blank" href="https://github.com/sabirlkhaloufi"><i class="fab fa-github"></i></a>
+                            <a class="text-white h5" target="_blank" href="https://web.facebook.com/s"><i class="fab fa-facebook-f"></i></a>
+                            <a class="text-white h5" target="_blank" href="https://twitter.com/LkhaloufiSabir"><i class="fab fa-twitter"></i></a>
+                            <a class="text-white h5" href="https://www.youtube.com/channel/UC6GNAIbkg1NV0LmhopxOxiA" target="_blank"><i class="fab fa-youtube"></i></a>
 
-      
+                            
+
+                        </div>
+                    </div>
+                        <svg class="home__blob mt-2 mt-lg-0 mb-2" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                                <image class="home__blob-img" x="-50" y="70" href="./assets/img/sabirimage-removebg-preview.png"/>
+                            </g>
+                        </svg>
+                </div>
             </div>
 
-            <div class="about" id="About">
-                <div class="title">
-                    <h2>About me</h2>
-                    <div class="who"><hr><span>who i am</span><hr></div>
+            <div class="about container mt-4" id="About">
+                <div class="title mb-3">
+                    <h2 class="text-center h2">About me</h2>
+                    <div class="soutitle d-flex justify-content-center gap-1"><hr><span>who i am</span><hr></div>
                 </div>
-                <div class="profil">
-                    <img src="./assets/img/sabirimage-removebg-preview.png" alt="sabir" height="250">
+                <div class="profil d-flex flex-column flex-lg-row gap-4 justify-content-center align-items-center">
+                    <img src="./assets/img/undraw_programming_re_kg9v.svg" alt="sabir" height="250">
                     <div class="resume">
-                        <h4>
+                        <h4 class="text-center text-lg-start">
                             I'm Sabir and I'm a Full Stack Developer</h4>
-                            <p>Lorem ipsum dolor sit excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa non.</p>
+                            <p class="text-center text-lg-start">I am a young Moroccan, motivated and passionate about web and mobile development, I am looking for a new opportunity on the IT job market, as a web developer intern for a period of two months under agreement, from of July. Indeed I am able to work with HTML-CSS-Javascript-PHP-Bootstrap.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="services" id="Services">
-                <div class="title">
-                    <h2>Services</h2>
-                    <div class="who"><hr><span>who i provide</span><hr></div>
+            <div class="services bg-black" id="Services">
+                <div class="container">
+                    <div class="title mb-3">
+                        <h2 class="text-center h2 text-white">My Services</h2>
+                        <div class="soutitle d-flex justify-content-center gap-1"><hr class="bg-white"><span>What Is Provide</span><hr></div>
+                    </div>
+                    <div class="card-group d-flex justify-content-center flex-column flex-md-row align-items-center gap-4">
+                        <div class="design card text-center border-0 d-flex flex-column justify-content-evenly">
+                            <i class="fas fa-paint-brush"></i>
+                            <h5 class="fw-bolder">Web Design UX/UI</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="web-dev card text-center border-0 d-flex flex-column justify-content-evenly">
+                            <i class="fas fa-code"></i>
+                            <h5 class="fw-bolder">Front End Developer</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="it card text-center border-0 d-flex flex-column justify-content-evenly">
+                            <i class="fas fa-tools"></i>
+                            <h5 class="fw-bolder">Back End Developer</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-service"></div>
-                <div class="cards">
-                    <div class="card">
-                        <i class="fas fa-paint-brush"></i>
-                        <h3>Design</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+            </div>
+
+            <div class="skills container py-5" id="Skills">
+                <div class="title mb-3">
+                    <h2 class="text-center h2">My Skills</h2>
+                    <div class="soutitle d-flex justify-content-center gap-1"><hr><span>What Is Know</span><hr></div>
+                </div>
+                <div class="full row justify-content-center align-items-center">
+                    <div class="frontend col-12 col-lg-6">
+                        <div class="front">
+                            <h3>Front End</h3>
+                        </div>
+                        <div class="tech d-flex gap-2">
+                            <img src="./assets/icons/html-5 (2).png" alt="html">
+                            <img src="./assets/icons/css-3 (1).png" alt="css">
+                            <img src="./assets/icons/bootstrap.png" alt="bootstrap">
+                            <img src="./assets/icons/js.png" alt="javascript">
+                        </div>
+                    </div>
+                    <div class="backend col-12 col-lg-6 mt-4">
+                        <div class="back">
+                            <h3>Back End</h3>
+                        </div>
+                        <div class="tech d-flex gap-2">
+                            <img src="./assets/icons/php.png" alt="php">
+                            <img src="./assets/icons/mysql.png" alt="mysql">
+                            <img src="./assets/icons/sql-server.png" alt="sql">
+                        </div>  
                     </div>
 
-                    <div class="card">
-                        <i class="fas fa-code"></i>
-                        <h3>Web Developer</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                    <div class="Design col-12 col-lg-6 mt-4">
+                        <div class="back">
+                            <h3>Design</h3>
+                        </div>
+                        <div class="tech d-flex gap-2">
+                            <img src="./assets/icons/icons8-adobe-xd-480.png" alt="adobe xd">
+                            <img src="./assets/icons/icons8-adobe-photoshop-480.png" alt="photoshop">
+                            <img src="./assets/icons/icons8-adobe-illustrator-480.png" alt="photoshop">
+                        </div>  
                     </div>
 
-                    <div class="card">
-                        <i class="fas fa-tools"></i>
-                        <h3>IT Support</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                    <div class="autre col-12 col-lg-6 mt-4">
+                        <div class="back">
+                            <h3>Autre</h3>
+                        </div>
+                        <div class="tech d-flex gap-2">
+                            <img src="./assets/icons/icons8-github-512.png" alt="github">
+                            <img src="./assets/icons/icons8-git-480.png" alt="git">
+                            <img src="./assets/icons/icons8-dart-480.png" alt="dart">
+                            <img src="./assets/icons/icons8-python-480.png" alt="">
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="Works pt-3" id="Works">
+                <div class="container">
+                    <div class="title mb-3">
+                        <h2 class="text-center h2">My Works</h2>
+                        <div class="soutitle d-flex justify-content-center gap-1"><hr><span>All Works</span><hr></div>
+                    </div>
+                    <div class="text-white d-flex flex-column gap-3">
+                        <div class="d-flex flex-column flex-lg-row justify-content-around align-items-center">
+                            <img src="./assets/img/project/portfolio.PNG" class="" alt="portfolio" width="450">
+                            <div class="">
+                                <h3 class="">My Portfolio</h3>
+                                <p class="">Techno : HTML, CSS, BOOTSTRAP, JAVASCRIPT</p>
+                                <div class="icon d-flex gap-3">
+                                    <a class="text-white h5" href="https://github.com/sabirlkhaloufi" target="_blank"><i class="fab fa-github"></i></a>
+                                    <a class="text-white h5" href="https://www.youtube.com/channel/UC6GNAIbkg1NV0LmhopxOxiA" target="_blank"><i class="fab fa-youtube"></i></a>
+                                    <a class="text-white h5" href="https://github.com/sabirlkhaloufi" target="_blank"><i class="fas fa-browser"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column flex-lg-row-reverse justify-content-around align-items-center">
+                            <img src="./assets/img/project/calculDD.png" class="" alt="portfolio" width="450"">
+                            <div class="">
+                                <h3 class="">Calculatrice JS</h3>
+                                <p class="">Techno : HTML, CSS, JAVASCRIPT</p>
+                                <div class="icon d-flex gap-3">
+                                    <a class="text-white h5" href="https://github.com/sabirlkhaloufi" target="_blank"><i class="fab fa-github"></i></a>
+                                    <a class="text-white h5" href="https://www.youtube.com/channel/UC6GNAIbkg1NV0LmhopxOxiA" target="_blank"><i class="fab fa-youtube"></i></a>
+                                    <a class="text-white h5" href="https://github.com/sabirlkhaloufi" target="_blank"><i class="fas fa-browser"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column flex-lg-row justify-content-around align-items-center">
+                            <img src="./assets/img/project/covid-test.PNG" class="" alt="portfolio" width="450"">
+                            <div class="">
+                                <h3 class="">Covid Test</h3>
+                                <p class="">Techno : HTML, CSS, BOOTSTRAP, JAVASCRIPT</p>
+                                <div class="icon d-flex gap-3">
+                                    <a class="text-white h5" href="https://github.com/sabirlkhaloufi" target="_blank"><i class="fab fa-github"></i></a>
+                                    <a class="text-white h5" href="https://www.youtube.com/channel/UC6GNAIbkg1NV0LmhopxOxiA" target="_blank"><i class="fab fa-youtube"></i></a>
+                                    <a class="text-white h5" href="https://github.com/sabirlkhaloufi" target="_blank"><i class="fas fa-browser"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column flex-lg-row-reverse justify-content-around align-items-center">
+                            <img src="./assets/img/project/apps web.PNG" class="" alt="portfolio" width="450">
+                            <div class="">
+                                <h3 class="">E-Learning Application</h3>
+                                <p class="">Techno : HTML, CSS, BOOTSTRAP, JAVASCRIPT, PHP,SQL</p>
+                                <div class="icon d-flex gap-3">
+                                    <a class="text-white h5" href="https://github.com/sabirlkhaloufi" target="_blank"><i class="fab fa-github"></i></a>
+                                    <a class="text-white h5" href="https://www.youtube.com/channel/UC6GNAIbkg1NV0LmhopxOxiA" target="_blank"><i class="fab fa-youtube"></i></a>
+                                    <a class="text-white h5" href="https://github.com/sabirlkhaloufi" target="_blank"><i class="fas fa-browser"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -124,7 +243,8 @@
         <div class="up-top " style="color:aliceblue">
             <i class="fas fa-angle-up" style="color:aliceblue"></i>
         </div>
-    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

@@ -9,16 +9,6 @@ let typeWrite = setInterval(function(){
     }
 },100 )
 
-/////////////////show navbar
-
-let menuToggle = document.querySelector('.menutoggle');
-menuToggle.addEventListener("click",function(){
-    document.querySelector('.t-line').classList.toggle('t-line-r');
-    document.querySelector('.b-line').classList.toggle('b-line-r');
-    document.querySelector('.m-line').classList.toggle('cach-m-line');
-    document.querySelector('.navbar-mobile').classList.toggle('show-navbar-mobile');
-})
-
 /////////////////up to top
 
 
@@ -27,11 +17,11 @@ const up = document.querySelector(".up-top");
 window.addEventListener("scroll",()=>{
     if(window.scrollY >200){
         up.classList.add("show-up-top");
-        document.querySelector(".bg-nav").classList.add("show-bg-nav");
+        document.querySelector(".navbar").classList.add("navbar-bg");
     }
     else{
         up.classList.remove("show-up-top"); 
-        document.querySelector(".bg-nav").classList.remove("show-bg-nav");
+        document.querySelector(".navbar").classList.remove("navbar-bg");
     }
 })
 

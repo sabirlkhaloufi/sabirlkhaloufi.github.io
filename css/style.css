@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Ubuntu&display=swap');
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
 
 :root{
     --colorB:crimson;
     --colorP:black;
+    --colorCard:#222;
 }
 
 .home__blob{
@@ -28,316 +26,86 @@ html {
     border-radius: 10px;
 }
 /* scroll bars */
-
-/* ---up top btn */
-.up-top{
-    position:fixed;
-    bottom: 20px;
-    right: 15px;
-    background-color:var(--colorB);
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: -100px;
+.navbar-bg{
+    background-color: var(--colorB) !important;
+    transition: ease-in-out .6s;
 }
-.show-up-top{
-    margin-bottom:0 !important;
-    transition: .8s ease-in-out;
-}
-.up-top i{
-    font-size: 25px;
-}
-/* ---up top btn */
-.show-bg-nav{
-    transition: .5s ease-in-out;
-    margin-top: 0 !important;
-}
-.bg-nav{
-    background-color: var(--colorB);
-    height: 70px;
-    width: 100vw;
-    position:fixed;
-    top: 0;
-    margin-top: -200px;
-}
-.container{
-    width: 90%;
-    margin-left: 5%;
-}
-.im{
-    height: 160vh;
-    width: 100%;
-    z-index: -1;
-    position:absolute;
-    top: 0;
-    background: url(../assets/img/macbook_5k.jpg);
-    background-attachment: fixed;
-    background-size:  100% 100%;
-    background-repeat: no-repeats;
-    min-height: 500px;
-}
-.show-navbar-mobile{
-    display: block !important;
-    transition: ease-in-out 1s !important;
-}
-.navbar-mobile{
-    transition: ease-in-out .8s;
-    position:fixed;
-    top: 0;
-    display: none;
-    background-color: var(--colorP);
-    width: 100%;
-    height: 100vh;
-}
-.navbar-mobile ul{
-    padding-top: 140px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-}
-.menutoggle{
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-.menutoggle div{
-    background-color: white;
-    width: 30px;
-    height: 4px;
-    border-radius: 6px;
-}
-.t-line,.b-line{
-    transition: ease-in-out .5s;
-}
-.t-line-r{
-    transform: rotate(-45deg);
-    transition: ease-in-out .5s;
-}
-.b-line-r{
-    margin-top: -8px;
-    transform: rotate(45deg);
-    transition: ease-in-out .5s;
-}
-.cach-m-line{
-    margin-top: 10px;
-    display: none;
-    transition: ease-in-out .5s;
-}
-.menutoggle .m-line{
-    width:22px;
-    align-self: end;
-    transition: ease-in-out .5s;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-}
-ul{
-    list-style: none;
-}
-header{
-    padding: 5px;
-    position:sticky;
-    top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-header nav{
-    display: none;
-}
-header nav ul{
-    width: 350px;
-    display: flex;
-    justify-content: space-between;
-}
-.logo a{
-    font-size: 20px;
-    font-weight: bold;
+.ms-lg-5{
+    margin-left: 650px !important;
 }
 .home{
-    padding-top: 150px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
+    background-image: url(../assets/img/wallpaperflare.com_wallpaper\ \(3\).jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
-.home .info{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.name{
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: -3px;
 }
-.home .info h1{
-    font-size: 40px;
-    font-weight: bold;
-}
-.home .info p{
-    font-size: 25px;
-}
-.home .info .btn{
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-}
-.home .info .btn a{
-    border: 2px solid var(--colorB);
-    padding: 10px;
-    width: 120px;
-    text-align: center;
-    border-radius: 6px;
-}
+
 .home .info .btn .cv{
-    background-color: var(--colorB);
+    background-color: var(--colorB) !important;
 }
 .home .info .btn .cv:hover{
-    background: transparent;
-    transition: .5s ease-in-out;
+    background: transparent !important;
+    transition: .5s ease-in-out !important;
+}
+.home .info .btn a{
+    border: 2px solid var(--colorB) !important;
+    border-radius: 6px !important;
+}
+.home .info .btn .hire{
+    background: none !important;
 }
 .home .info .btn .hire:hover{
-    background-color: var(--colorB);
-    transition: .5s ease-in-out;
-}
-.home .social-media{
-    margin-top: 15px;
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-    width: 250px;
-}
-.home .social-media i{
-    font-size: 20px;
+    background-color: var(--colorB) !important;
+    transition: .5s ease-in-out !important;
 }
 
 
-/* ---------------------about me----------------------------- */
-.about{
-    margin-top: 180px;
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.title .who{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-}
-.title .who hr{
+/* /* ------------------about---------------- */
+
+.title .soutitle hr{
     width: 30px;
 }
-.title .who span{
+.title .soutitle span{
     color: var(--colorB);
     font-size: 20px;
     font-weight: bold;
 }
-.title h2{
-    font-size: 40px;
-    text-align: center;
-}
-.about .profil{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-}
-.about .profil .resume{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.about .profil .resume p{
-    line-height: 1.8;
-}
-.about .profil h4{
-    font-size: 19px;
-    font-weight: 600px;
-}
 
-/*----------------------------------------services----------------------------------------*/
-.services{
+
+
+/* ---------------services------------------- */
+.services,.Works{
     background-color: var(--colorP);
     color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    position: absolute;
-    z-index: -2;
-    width:98.2vw;
-    left: 0;
     padding-bottom: 50px;
 }
-.services .cards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
-.services .cards .card{
+.services .card-group .card{
     cursor: pointer;
     border-radius: 10px ;
-    width: 350px;
-    height: 250px;
+    width: 300px;
+    height: 240px;
     background-color: #222;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
     padding: 20px;
 }
-.services .cards .card:hover{
+.services .card-group .card:hover{
     background-color: var(--colorB);
     transition: .5s ease-in-out;
 }
-.services .cards .card i{
+.services .card-group .card i{
     color: var(--colorB);
     font-size:50px;
 }
-.services .cards .card h3{
+.services .card-group .card h3{
     font-size: 25px;
     font-weight: 500px;
 }
-.services .cards .card p{
+.services .card-group .card p{
     text-align: center;
 }
-
-@media screen and (min-width:800px){
-    header nav{
-        display: block;
-    }
-    .im{
-        height: 100vh;
-    }
-    .home{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .home .info h1{
-        font-size: 55px;
-    }
-    .navbar-mobile{
-        display: none;
-    }
-    .menutoggle{
-        display: none;
-    }
-
-    /*--------------about----------------------*/
-    .about .profil{
-        flex-direction: row;
-        align-items: center;
-    }
-
-    /*--------------services----------------------*/
-    .services .cards{
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 0px 5px;
-    }
-
+.skills img{
+    width: 50px;
 }
