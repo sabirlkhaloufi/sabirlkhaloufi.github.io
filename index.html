@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./WOW/css/libs/animate.css">
 </head>
 <body>
         <header class="position-sticky top-0 navbar-z-index">
@@ -45,12 +46,12 @@
         <main>
             <div class="home vh-100" id="Home">
                 <div class="container vh-100 d-flex flex-column flex-lg-row justify-content-between align-items-center">
-                    <div class="info text-white d-flex flex-column gap-2 mt-5">
+                    <div class="wow slideInLeft info text-white d-flex flex-column gap-2 mt-5 animate__animated animate__bounce">
                         <p class="h3">Hello, my name is</p>
                         <h1 class="h1 name">Sabir Lkhaloufi</h1>
                         <p class="write h3"></p>
                         <div class="btn justify-content-start d-flex gap-3">
-                            <a class="cv btn btn-danger" href="./assets/img/sabir cv.pdf" target="_blank">Download Cv</a>
+                            <a class="cv btn btn-danger" href="./assets/img/sabircv.pdf" target="_blank">Download Cv</a>
                             <a class="hire btn btn-danger" href="#">Contact Me</a>
                         </div> 
                         <div class="social-media d-flex gap-4 ms-3 my-2">
@@ -61,7 +62,7 @@
                             <a class="text-white h3" href="https://www.youtube.com/channel/UC6GNAIbkg1NV0LmhopxOxiA" target="_blank"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
-                        <svg class="home__blob mt-2 mt-lg-0 mb-2" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350">
+                        <svg class=" home__blob mt-2 mt-lg-0 mb-2" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350">
                             <mask id="mask0" mask-type="alpha">
                                 <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
                             </mask>
@@ -70,16 +71,17 @@
                                 <image class="home__blob-img" x="-50" y="70" href="./assets/img/sabirimage-removebg-preview.png"/>
                             </g>
                         </svg>
+                        
                 </div>
             </div>
 
-            <div class="about container my-5" id="About">
+            <div class="about container my-5 wow fadeInDown" id="About">
                 <div class="title mb-3">
                     <h2 class="text-center h2">About me</h2>
                     <div class="soutitle d-flex justify-content-center gap-1"><hr><span>who i am</span><hr></div>
                 </div>
                 <div class="profil d-flex flex-column flex-lg-row gap-4 justify-content-center align-items-center">
-                    <img src="./assets/img/undraw_programming_re_kg9v.svg" alt="sabir" height="250">
+                    <img class="" src="./assets/img/undraw_programming_re_kg9v.svg" alt="sabir" height="250">
                     <div class="resume">
                         <h4 class="text-center text-lg-start">
                             I'm Sabir and I'm a Full Stack Developer</h4>
@@ -90,23 +92,23 @@
 
 
             <div class="services bg-black" id="Services">
-                <div class="container">
+                <div class="container pt-3">
                     <div class="title mb-3">
                         <h2 class="text-center h2 text-white">My Services</h2>
                         <div class="soutitle d-flex justify-content-center gap-1"><hr class="bg-white"><span>What Is Provide</span><hr></div>
                     </div>
                     <div class="card-group d-flex justify-content-center flex-column flex-md-row align-items-center gap-4">
-                        <div class="design card text-center border-0 d-flex flex-column justify-content-evenly">
+                        <div class="wow bounceInLeft design card text-center border-0 d-flex flex-column justify-content-evenly">
                             <i class="fas fa-paint-brush"></i>
                             <h5 class="fw-bolder">Web Design UX/UI</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
-                        <div class="web-dev card text-center border-0 d-flex flex-column justify-content-evenly">
+                        <div class=" wow fadeInDown web-dev card text-center border-0 d-flex flex-column justify-content-evenly">
                             <i class="fas fa-code"></i>
                             <h5 class="fw-bolder">Front End Developer</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
-                        <div class="it card text-center border-0 d-flex flex-column justify-content-evenly">
+                        <div class=" wow bounceInRight it card text-center border-0 d-flex flex-column justify-content-evenly">
                             <i class="fas fa-tools"></i>
                             <h5 class="fw-bolder">Back End Developer</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -126,11 +128,11 @@
                             <h3>Front End</h3>
                         </div>
                         <div class="tech d-flex gap-2">
-                            <img src="./assets/icons/html-5 (2).png" alt="html">
-                            <img src="./assets/icons/css-3 (1).png" alt="css">
-                            <img src="./assets/icons/bootstrap.png" alt="bootstrap">
-                            <img src="./assets/icons/js.png" alt="javascript">
-                            <img src="./assets/icons/jquery.png" alt="">
+                            <img class="img-fluid" src="./assets/icons/html-5 (2).png" alt="html">
+                            <img class="img-fluid" src="./assets/icons/css-3 (1).png" alt="css">
+                            <img class="img-fluid" src="./assets/icons/bootstrap.png" alt="bootstrap">
+                            <img class="img-fluid" src="./assets/icons/js.png" alt="javascript">
+                            <img class="img-fluid" src="./assets/icons/jquery.png" alt="">
                         </div>
                     </div>
                     <div class="backend col-12 col-lg-6 mt-4">
@@ -138,9 +140,9 @@
                             <h3>Back End</h3>
                         </div>
                         <div class="tech d-flex gap-2">
-                            <img src="./assets/icons/php.png" alt="php">
-                            <img src="./assets/icons/mysql.png" alt="mysql">
-                            <img src="./assets/icons/sql-server.png" alt="sql">
+                            <img class="img-fluid" src="./assets/icons/php.png" alt="php">
+                            <img class="img-fluid" src="./assets/icons/mysql.png" alt="mysql">
+                            <img class="img-fluid" src="./assets/icons/sql-server.png" alt="sql">
                         </div>  
                     </div>
 
@@ -149,9 +151,9 @@
                             <h3>Design</h3>
                         </div>
                         <div class="tech d-flex gap-2">
-                            <img src="./assets/icons/icons8-adobe-xd-480.png" alt="adobe xd">
-                            <img src="./assets/icons/icons8-adobe-photoshop-480.png" alt="photoshop">
-                            <img src="./assets/icons/icons8-adobe-illustrator-480.png" alt="photoshop">
+                            <img class="img-fluid" src="./assets/icons/icons8-adobe-xd-480.png" alt="adobe xd">
+                            <img class="img-fluid" src="./assets/icons/icons8-adobe-photoshop-480.png" alt="photoshop">
+                            <img class="img-fluid" src="./assets/icons/icons8-adobe-illustrator-480.png" alt="photoshop">
                         </div>  
                     </div>
 
@@ -160,15 +162,14 @@
                             <h3>Autre</h3>
                         </div>
                         <div class="tech d-flex gap-2">
-                            <img src="./assets/icons/icons8-github-512.png" alt="github">
-                            <img src="./assets/icons/icons8-git-480.png" alt="git">
-                            <img src="./assets/icons/icons8-dart-480.png" alt="dart">
-                            <img src="./assets/icons/icons8-python-480.png" alt="">
+                            <img class="img-fluid" src="./assets/icons/icons8-github-512.png" alt="github">
+                            <img class="img-fluid" src="./assets/icons/icons8-git-480.png" alt="git">
+                            <img class="img-fluid" src="./assets/icons/icons8-dart-480.png" alt="dart">
+                            <img class="img-fluid" src="./assets/icons/icons8-python-480.png" alt="">
                         </div>  
                     </div>
                 </div>
             </div>
-
 
             <div class="Works pt-3" id="Works">
                 <div class="container">
@@ -178,10 +179,10 @@
                     </div>
                     <div class="text-white d-flex flex-column gap-3">
                         <div class="d-flex flex-column flex-lg-row justify-content-around align-items-center">
-                            <img src="./assets/img/project/portfolio.PNG" class="" alt="portfolio" width="450">
+                            <img class="img-fluid" src="./assets/img/project/portfolio.PNG" class="" alt="portfolio" width="560">
                             <div class="">
                                 <h3 class="">My Portfolio</h3>
-                                <p class="">Technologies : HTML, CSS, BOOTSTRAP, JAVASCRIPT</p>
+                                <p class="">Technologies : HTML-CSS-BOOTSTRAP-JAVASCRIPT</p>
                                 <div class="icon d-flex gap-3 justify-content-center align-items-center">
                                     <a class="text-white h5" href="https://github.com/sabirlkhaloufi" target="_blank"><i class="fab fa-github"></i></a>
                                     <a class="text-white h5" href="https://www.youtube.com/channel/UC6GNAIbkg1NV0LmhopxOxiA" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -191,10 +192,10 @@
                         </div>
 
                         <div class="d-flex flex-column flex-lg-row-reverse justify-content-around align-items-center">
-                            <img src="./assets/img/project/calculDD.png" class="" alt="portfolio" width="450"">
+                            <img class="img-fluid" src="./assets/img/project/calculDD.png" class="" alt="portfolio" width="560">
                             <div class="">
                                 <h3 class="">Calculatrice JS</h3>
-                                <p class="">Technologies : HTML, CSS, JAVASCRIPT</p>
+                                <p class="">Technologies : HTML-CSS-JAVASCRIPT</p>
                                 <div class="icon d-flex gap-3 justify-content-center align-items-center">
                                     <a class="text-white h5" href="https://github.com/sabirlkhaloufi" target="_blank"><i class="fab fa-github"></i></a>
                                     <a class="text-white h5" href="https://www.youtube.com/channel/UC6GNAIbkg1NV0LmhopxOxiA" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -204,10 +205,10 @@
                         </div>
 
                         <div class="d-flex flex-column flex-lg-row justify-content-around align-items-center">
-                            <img src="./assets/img/project/covid-test.PNG" class="" alt="portfolio" width="450"">
+                            <img class="img-fluid" src="./assets/img/project/covid-test.PNG" class="" alt="portfolio" width="560"">
                             <div class="">
                                 <h3 class="">Covid Test</h3>
-                                <p class="">Technologies : HTML, CSS, BOOTSTRAP, JAVASCRIPT</p>
+                                <p class="">Technologies : HTML-CSS-BOOTSTRAP-JAVASCRIPT</p>
                                 <div class="icon d-flex gap-3 justify-content-center align-items-center">
                                     <a class="text-white h5" href="https://github.com/sabirlkhaloufi" target="_blank"><i class="fab fa-github"></i></a>
                                     <a class="text-white h5" href="https://www.youtube.com/channel/UC6GNAIbkg1NV0LmhopxOxiA" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -217,10 +218,10 @@
                         </div>
 
                         <div class="d-flex flex-column flex-lg-row-reverse justify-content-around align-items-center">
-                            <img src="./assets/img/project/apps web.PNG" class="" alt="portfolio" width="450">
+                            <img class="img-fluid" src="./assets/img/project/apps web.PNG" class="" alt="portfolio" width="560">
                             <div class="">
                                 <h3 class="">E-Learning Application</h3>
-                                <p class="">Technologies : HTML, CSS, BOOTSTRAP, JAVASCRIPT, PHP,SQL</p>
+                                <p class="">Technologies : HTML-CSS-BOOTSTRAP-JAVASCRIPT-PHP-SQL</p>
                                 <div class="icon d-flex gap-3 justify-content-center align-items-center">
                                     <a class="text-white h5" href="https://github.com/sabirlkhaloufi" target="_blank"><i class="fab fa-github"></i></a>
                                     <a class="text-white h5" href="https://www.youtube.com/channel/UC6GNAIbkg1NV0LmhopxOxiA" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -231,10 +232,10 @@
 
 
                         <div class="text-center d-flex flex-column flex-lg-row justify-content-around align-items-center">
-                            <img src="./assets/img/project/gestion contacts.png" class="" alt="portfolio" width="450">
+                            <img class="img-fluid" src="./assets/img/project/gestion contacts.png" class="" alt="portfolio" width="560">
                             <div class="">
                                 <h3 class="">Contacts Management </h3>
-                                <p class="">Technologies : HTML, CSS, BOOTSTRAP, JAVASCRIPT, PHP,OOP ,SQL</p>
+                                <p class="">Technologies : HTML-CSS-BOOTSTRAP-JAVASCRIPT-PHP-OOP-SQL</p>
                                 <div class="icon d-flex gap-3 justify-content-center align-items-center justify-content-center align-items-center">
                                     <a class="text-white h5" href="https://github.com/sabirlkhaloufi" target="_blank"><i class="fab fa-github"></i></a>
                                     <a class="text-white h5" href="https://www.youtube.com/channel/UC6GNAIbkg1NV0LmhopxOxiA" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -244,10 +245,10 @@
                         </div>
 
                         <div class="d-flex flex-column flex-lg-row-reverse justify-content-around align-items-center">
-                            <img src="./assets/img/project/gestion-ecole.png" class="" alt="portfolio" width="450">
+                            <img class="img-fluid" src="./assets/img/project/gestion-ecole.png" class="" alt="portfolio" width="560">
                             <div class="">
                                 <h3 class="text-center">School Management </h3>
-                                <p class="">Technologies : HTML, CSS, BOOTSTRAP, JAVASCRIPT, PHP, MVC, OOP ,SQL</p>
+                                <p class="">Technologies : HTML-CSS-BOOTSTRAP-JAVASCRIPT-PHP-MVC-OOP-SQL</p>
                                 <div class="icon d-flex gap-3 justify-content-center align-items-center">
                                     <a class="text-white h5" href="https://github.com/sabirlkhaloufi" target="_blank"><i class="fab fa-github"></i></a>
                                     <a class="text-white h5" href="https://www.youtube.com/watch?v=IJgdBHeHhZA" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -257,10 +258,10 @@
                         </div>
 
                         <div class="d-flex flex-column flex-lg-row justify-content-around align-items-center">
-                            <img src="./assets/img/project/khadamat.png" class="" alt="portfolio" width="450">
+                            <img class="img-fluid" src="./assets/img/project/khadamat.png" class="" alt="portfolio" width="560">
                             <div class="">
-                                <h3 class="">Home repair </h3>
-                                <p class="">Technologies : HTML, CSS, BOOTSTRAP, JAVASCRIPT, JQUERY, PHP, MVC, OOP ,SQL</p>
+                                <h3 class="">Home repair</h3>
+                                <p class="">Technologies : HTML-CSS-BOOTSTRAP-JAVASCRIPT-JQUERY-PHP-MVC-OOP-SQL</p>
                                 <div class="icon d-flex gap-3 justify-content-center align-items-center">
                                     <a class="text-white h5" href="https://github.com/sabirlkhaloufi" target="_blank"><i class="fab fa-github"></i></a>
                                     <a class="text-white h5" href="https://www.youtube.com/watch?v=dgT61PlID64" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -268,8 +269,6 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -284,5 +283,24 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
+    <script src="./WOW/dist/wow.js"></script>
+    <script>
+        wow = new WOW(
+        {
+            animateClass: 'animated',
+            offset:       100,
+            callback:     function(box) {
+            console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+        }
+        );
+        wow.init();
+        document.getElementById('moar').onclick = function() {
+        var section = document.createElement('section');
+        section.className = 'section--purple wow fadeInDown';
+        this.parentNode.insertBefore(section, this);
+        };
+    </script>
+
 </body>
 </html>
