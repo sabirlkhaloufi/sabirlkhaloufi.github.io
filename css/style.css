@@ -109,3 +109,8 @@ html {
 .skills img{
     width: 50px;
 }
+
+
+.navbar-z-index{
+    z-index: 2;
+}
